@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Page Seller</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="add.js" defer></script>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 30px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Style */
+h1 {
+    font-size: 36px;
+    color: #4ba063;
+    margin-bottom: 20px;
+}
+
+/* "List a Page" Heading Style */
+.list-heading {
+    font-size: 30px;
+    color: #4ba063;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 2px solid #4ba063;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff7f50;
+    outline: none;
+}
+
+/* Button Style */
+button {
+    width: 80%;
+    padding: 14px;
+    margin: 20px 0;
+    background-color: #4ba063;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff7f50;
+}
+
+/* Link Button */
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .list-heading {
+        font-size: 26px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Page Seller</h1>
+        <p id="walletAddress"></p>
+        <h2 class="list-heading">List a Page</h2>
+        <form id="listPageForm">
+            <input type="text" id="name" placeholder="Page Name" required />
+            <input type="number" id="followers" placeholder="Followers" required />
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <input type="number" id="price" placeholder="Price (EDU)" required />
+            <button type="submit">List Page</button>
+        </form>
+        <div class="button-container">
+            <button><a href="list.html">Show Pages</a></button>
+        </div>
+    </div>
+</body>
+</html>

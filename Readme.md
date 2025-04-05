@@ -32,7 +32,7 @@ InstaMarket connects sellers and buyers through smart contracts deployed on the 
 The InstaMarket DApp runs on a smart contract deployed on the EduChain blockchain. The contract allows users to list their Instagram pages for sale, purchase pages, and track the sale status of each page. It ensures that all transactions are secure, transparent, and verifiable on the blockchain.
 
 - **Contract Address**: `0xd7f256fe8Bc1F1B6176D2D0f65a130D2b8d43d02`
-- **Network**: EduChain Mainnet
+- **Network**: EduChain Testnet
 
 ## Deployment
 
